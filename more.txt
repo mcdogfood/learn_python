@@ -4,3 +4,5 @@ more.txt
 
 
 I'm going to write some more here, so that I can try and push using SSH.
+
+Try again using the command line, after setting the url to the git remote, rather than the HTTPS one.
