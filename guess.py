@@ -18,14 +18,14 @@ guessesTaken = 0
 insults = "dimwit idiot silly-billy dunce mushy-brain bimble-bomble split-coat fishface fish-stone stinky-bum".split();
 
 print('Hello! What are you called?')
-myName = input()
+myName = raw_input()
 
 number = random.randint(1, 20)
 print('Eh up, Hello ' + myName + ', I am thinking of a number between 1 and 20.')
 
 while guessesTaken < 6:
   print('Take a guess.') # There are two spaces in front of print.
-  guess = input()
+  guess = raw_input()
   guess = int(guess)
   if guess < 0 or guess > 20:
     insult = random.randint(0, len(insults)-1)
