@@ -33,3 +33,41 @@ def older_code():
     position += 1
   else:  # break not called
     print('No even number found')
+
+  # Iterate over a collection
+  rabbits = ['Flopsy', 'Mopsy', 'Cottontail', 'Peter']
+  current = 0
+  while current < len(rabbits):
+    print(rabbits[current])
+    current += 1
+
+  # A more Pythonic way to do the above
+  for rabbit in rabbits:
+    print(rabbit)
+
+  # Iterate over string
+  word = 'cat'
+  for letter in word:
+    print(letter)
+
+# Iterate over a dictionary (Gives the keys)
+accusation = {
+  'room': 'ballroom',
+  'weapon': 'lead pipe',
+  'person': 'Colonel Mustard',
+}
+
+for card in accusation: # same as for card in accusation.keys():
+  print(card)
+
+# Gets the values
+for value in accusation.values():
+  print(value)
+
+# Gets key and value as a tuple
+for item in accusation.items():
+  print(item)
+
+# Assigning to a tuple in one step
+for card, contents in accusation.items():
+  print('Card', card, 'has the contents', contents)
